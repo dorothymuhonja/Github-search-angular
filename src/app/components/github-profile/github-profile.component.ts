@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { UserService } from '../../user.service';
+import  { User } from '../../user';
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-github-profile',
