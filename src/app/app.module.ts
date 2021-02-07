@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GithubProfileComponent } from './components/github-profile/github-profile.component';
 import { UserService } from './user.service';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -18,7 +19,8 @@ import { UserService } from './user.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
