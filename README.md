@@ -16,7 +16,7 @@ This is an app where a user can search for github profiles and repositories.
 # How to run
 * Click on this [Link](https://github.com/dorothymuhonja/Github-search-angular.git) to access my git hub Github search repositpory.
 * Fork the repo or clone the project to your local machine
-* Click this [link]() to view the live page
+* Click this [link](https://dorothymuhonja.github.io/Github-search-angular/) to view the live page
 
 
 ### Development server
