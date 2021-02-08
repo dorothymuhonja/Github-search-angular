@@ -48,6 +48,7 @@ img{
 
 .cont-2{
     margin-top: 50px;
+    
    
     
 }
@@ -59,6 +60,7 @@ img{
 
 .panel-body{
     align-items: center;
+    margin-bottom: 0;
 }
 
 /* #repos{
@@ -72,7 +74,7 @@ text-align: center;
 } */
 
 
-.card {
+ .card {
     width: 100%;
     padding: 9px 20px 9px 20px;
     margin-bottom: 0px;
@@ -80,8 +82,6 @@ text-align: center;
     box-shadow: 1px 1px 1px #dfdfdf;
     box-sizing: border-box;
     height: 100% !important;
+    
 
- 
-  
-
-}
+} 
