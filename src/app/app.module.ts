@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './components/profile/profile.component';
+import { GithubService } from './github.service';
 
 
 
@@ -22,7 +23,7 @@ import { ProfileComponent } from './components/profile/profile.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [GithubService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,1 +1,74 @@
-<p>profile works!</p>
+<div class="container">
+<!--Search bar-->
+<div class="row">
+    <div class="col-md-12">
+        <form class="well">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter github username you want to search..."
+                    [(ngModel)]="username" name="username" (keyup)="searchUser()" style="text-align:center">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div *ngIf="user">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title" style="font-size: 20px;"><strong>GitHub Name: {{user.name}}</strong></h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <img class="img-thumbnail" src="{{user.avatar_url}}">
+                    <a class="btn btn-default btn-block" target="_blank" href="{{user.html_url}}">View User Profile</a>
+                </div>
+
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div class="stats">
+                        <p>{{user.bio}}</p>
+                        <span class="label label-success">{{user.public_repos}} Public Repositories</span>
+                        <span class="label label-info">{{user.followers}} Followers</span>
+                        <span class="label label-info">{{user.following}} Following</span>
+                    </div>
+                    <br />
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>Username: </strong>{{user.name}}
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Location: </strong>{{user.location}}
+                        </li>
+                        <li class="list-group-item">
+                            <strong> Email: </strong>{{user.email}}
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding: right 500px;">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title" style="text-align:center"><strong>User Repositories</strong></h3>
+            </div>
+            <div class="panel-body">
+                <div *ngFor="let repo of repos">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h4>
+                                <a target="_blank" href="{{repo.html_url}}">{{repo.name}}</a>
+                            </h4>
+                            <p>{{repo.description}}</p>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
