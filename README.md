@@ -14,7 +14,7 @@ This is an app where a user can search for github profiles and repositories.
 * Latest web browser
 
 # How to run
-* Click on this [Link](https://github.com/dorothymuhonja/Github-search-angular.git) to access my git hub Delani-studio repositpory.
+* Click on this [Link](https://github.com/dorothymuhonja/Github-search-angular.git) to access my git hub Github search repositpory.
 * Fork the repo or clone the project to your local machine
 * Click this [link]() to view the live page
 
