@@ -3,8 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GithubProfileComponent } from './components/github-profile/github-profile.component';
-import { UserService } from './user.service';
 import { FormsModule } from '@angular/forms';
 
 
@@ -12,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    GithubProfileComponent,
+    
  
     
   ],
@@ -22,7 +20,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule
   ],
-  providers: [UserService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
